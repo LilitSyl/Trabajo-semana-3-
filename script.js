@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             isValid = false;
         }
 
-        // Validación de Teléfono (ejemplo simple: solo números, 9 dígitos)
+        // Validación de Teléfono 
         const telefono = document.getElementById('telefono');
         if (!telefono.value.trim()) {
             showError(telefono, 'El Teléfono es obligatorio.');
@@ -113,8 +113,6 @@ document.addEventListener('DOMContentLoaded', () => {
             showError(estadoCivil, 'El Estado Civil es obligatorio.');
             isValid = false;
         }
-
-        // Comentarios es opcional, no requiere validación de campo vacío
 
         return isValid;
     };
